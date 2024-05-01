@@ -19,6 +19,7 @@ public partial class vPersona : ContentPage
     private void btnObtener_Clicked(object sender, EventArgs e)
     {
         lblStatus.Text = "";
-        List<Persona> personas = new List<Persona>();
+        List<Persona> people=App.PersonRepo.GetAllPeople();
+        listapersona.ItemsSource = people;
     }
 }

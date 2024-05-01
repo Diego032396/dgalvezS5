@@ -35,8 +35,8 @@ namespace dgalvezS5
                 Init();
                 if (string.IsNullOrEmpty(name))
                     throw new Exception("El nombre es requerido");
-                Persona persona = new () { Name = name };
-                result = conn.Insert (persona);
+                Persona person = new () { Name = name };
+                result = conn.Insert(person);
                 statusMessage = string.Format("Dato agreagado", result, name);
             }
             catch (Exception ex)

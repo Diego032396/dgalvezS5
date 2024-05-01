@@ -48,8 +48,8 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="Bingding id" Grid.Column="0"/>
-                            <Label Text="Bingding Name" Grid.Column="1"/>
+                            <Label Text="{Bingding id}" Grid.Column="0"/>
+                            <Label Text="{Bingding Name}" Grid.Column="1"/>
 
                         </Grid>
                     </DataTemplate>
