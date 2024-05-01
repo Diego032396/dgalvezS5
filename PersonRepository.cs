@@ -17,7 +17,7 @@ namespace dgalvezS5
 
         public void Init()
         { 
-            if (conn == null)
+            if (conn is not null)
                 return;
             conn = new(_dbPath);
             conn.CreateTable<Persona> ();       

@@ -47,9 +47,11 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding id}" Grid.Column="0"/>
-                            <Label Text="{Binding Name}" Grid.Column="1"/>
+                            <Label Text="{Binding Id}" Grid.Column="0"/>
+                            <Label Text="-----" Grid.Column="1"/>
+                            <Label Text="{Binding Name}" Grid.Column="2"/>
 
                         </Grid>
                     </DataTemplate>
