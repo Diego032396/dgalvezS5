@@ -7,7 +7,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new Vistas.vPersona();
             PersonRepo = personRepository;
         }
     }
