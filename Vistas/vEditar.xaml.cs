@@ -2,11 +2,10 @@ namespace dgalvezS5.Vistas;
 
 public partial class vEditar : ContentPage
 {
-	public vEditar(string nombre, int id)
+	public vEditar()
 	{
 		InitializeComponent();
-		txtNombre.Text = nombre;
-		lblIb.Text =id.ToString();
+		
 		
 	}
 

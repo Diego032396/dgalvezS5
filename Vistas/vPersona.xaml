@@ -35,12 +35,13 @@
                    Grid.Row="1"
                    Grid.Column="0"/>
 
+            
             <Button x:Name="btnObtener"
-                    Text="Listar"
+                    Text="Actualizar lista"
                     Grid.Row="2"
                     Grid.Column="0"
                     Clicked="btnObtener_Clicked"/>
-
+             
             <CollectionView x:Name="listapersona"
                             Grid.Row="3"
                             Grid.Column="0">
