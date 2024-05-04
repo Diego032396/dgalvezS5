@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dgalvezS5.Vistas.vEditar"
+             Title="vEditar">
+    <VerticalStackLayout>
+        <Label Text="id"/>
+        <Label x:Name="lblIb"/>
+        <Label Text="nombre"/>
+        <Entry x:Name="txtNombre"/>
+        <Button x:Name="btnActualizar"
+                Clicked="btnActualizar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
