@@ -22,4 +22,9 @@ public partial class vPersona : ContentPage
         List<Persona> people=App.PersonRepo.GetAllPeople();
         listapersona.ItemsSource = people;
     }
+
+    private void btnUpdate_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

@@ -58,5 +58,35 @@ namespace dgalvezS5
             }
             return new List<Persona>();
         }
+
+        public void UpdatePerson(Persona person)
+        {
+            try
+            {
+                Init();
+                conn.Update(person);
+                statusMessage = $"Se actualizó con exito {person.Name}.";
+
+            }
+            catch (Exception ex)
+            {
+                statusMessage = $"Erros al actualizar{person.Name} : {ex.Message}";
+            }
+        }
+
+        public void DeletePerson(int id)
+        {
+            try
+            {
+                Init();
+                conn.Delete<Persona>(id);
+                statusMessage = "Se elimino correctamente.";
+            }
+            catch (Exception ex)
+            {
+                statusMessage = $"Error al eliminar:{ex.Message}";
+            }
+        }
+
     }
 }

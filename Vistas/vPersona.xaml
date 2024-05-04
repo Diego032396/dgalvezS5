@@ -34,6 +34,7 @@
                    Grid.Column="0"/>
 
             <Button x:Name="btnObtener"
+                    Text="Listar"
                     Grid.Row="2"
                     Grid.Column="0"
                     Clicked="btnObtener_Clicked"/>
@@ -44,16 +45,37 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="25"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="50"/>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Id}" Grid.Column="0"/>
-                            <Label Text="-----" Grid.Column="1"/>
-                            <Label Text="{Binding Name}" Grid.Column="2"/>
-
-                        </Grid>
+                            <Label Text="{Binding Id}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="|" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Button x:Name="btnUpdate"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Grid.Row="0" Grid.Column="3"
+                                    Text="Eliminar"
+                                    TextColor="White"   
+                                    BackgroundColor="Red"
+                                    Clicked="btnUpdate_Clicked"/>
+                            <Button x:Name="bynDelete"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Grid.Row="0" Grid.Column="4"
+                                    Text="Actualizar"
+                                    TextColor="White"   
+                                    BackgroundColor="Blue"
+                                    Clicked="btnUpdate_Clicked"/>
+                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
