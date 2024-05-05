@@ -7,8 +7,6 @@ public partial class vPersona : ContentPage
 	public vPersona()
 	{
 		InitializeComponent();
-
-
 	}
 
     private void btnAgregar_Clicked(object sender, EventArgs e)
@@ -24,9 +22,6 @@ public partial class vPersona : ContentPage
        // lblStatus.Text = "";
         List<Persona> people=App.PersonRepo.GetAllPeople();
         listapersona.ItemsSource = people;
-        
-
-
     }
 
     private async void btnDelete_Clicked(object sender, EventArgs e)
@@ -41,8 +36,6 @@ public partial class vPersona : ContentPage
             App.PersonRepo.DeletePerson(persona.Id);
             await DisplayAlert("Confirmacion", App.PersonRepo.statusMessage, "Aceptar");
             btnObtener_Clicked(sender,e);
-
-
         }
     }
     private void btnUpdate_Clicked(object sender, EventArgs e)
@@ -51,8 +44,5 @@ public partial class vPersona : ContentPage
         var persona = button.BindingContext as Persona;
 
         Navigation.PushAsync(new Vistas.vEditar(persona.Name, persona.Id));
-        
-
-
     }
 }
