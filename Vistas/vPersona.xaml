@@ -61,25 +61,39 @@
                             </Grid.ColumnDefinitions>
                             <Label x:Name="lblEliminado"
                                    Grid.Row="0" Grid.Column="0"/>
-                            <Label Text="{Binding Id}" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            <Label Text="|" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            <Button x:Name="btnUpdate"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Start"
-                                    Grid.Row="0" Grid.Column="4"
-                                    Text="Actualizar"
-                                    TextColor="White"   
-                                    BackgroundColor="Blue"
-                                    Clicked="btnUpdate_Clicked"/>
+                            <Label Text="{Binding Id}" 
+                                   Grid.Row="0" 
+                                   Grid.Column="1" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Name}" 
+                                   Grid.Row="0" 
+                                   Grid.Column="2" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center"/>
+                            <Label Text="|" 
+                                   Grid.Row="0" 
+                                   Grid.Column="3" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center"/>
                             <Button x:Name="btnDelete"
                                     HorizontalOptions="Start"
                                     VerticalOptions="Start"
-                                    Grid.Row="0" Grid.Column="5"
+                                    Grid.Row="0" Grid.Column="4"
                                     Text="Eliminar"
                                     TextColor="White"   
                                     BackgroundColor="Red"
                                     Clicked="btnDelete_Clicked"/>
+                            <Button x:Name="btnUpdate"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Start"
+                                    Grid.Row="0"
+                                    Grid.Column="5"
+                                    Text="Actualizar"
+                                    TextColor="White"
+                                    BackgroundColor="Blue"
+                                    Clicked="btnUpdate_Clicked"/>
+
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

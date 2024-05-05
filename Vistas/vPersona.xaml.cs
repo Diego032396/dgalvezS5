@@ -28,18 +28,6 @@ public partial class vPersona : ContentPage
 
     }
 
-    private void btnUpdate_Clicked(object sender, EventArgs e)
-    {
-        var button = sender as Button;
-        var persona = button.BindingContext as Persona;
-
-        Navigation.PushAsync(new Vistas.vEditar());
-
-
-
-
-    }
-
     private async void btnDelete_Clicked(object sender, EventArgs e)
     {
         var button = sender as Button;
@@ -54,6 +42,16 @@ public partial class vPersona : ContentPage
             btnObtener_Clicked(sender,e);
 
         }
+
+    }
+
+    private void btnUpdate_Clicked(object sender, EventArgs e)
+    {
+        // var button = sender as Button;
+        //var persona = button.BindingContext as Persona;
+
+        Navigation.PushAsync(new Vistas.vEditar());
+
 
     }
 }
