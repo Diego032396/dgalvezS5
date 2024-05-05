@@ -41,17 +41,24 @@ public partial class vPersona : ContentPage
             await DisplayAlert("Confirmacion", App.PersonRepo.statusMessage, "Aceptar");
             btnObtener_Clicked(sender,e);
 
+
         }
+    }
+    private void btnUpdate_Clicked(object sender, EventArgs e)
+    {
+       // var button = sender as Button;
+        //var persona = button.BindingContext as Persona;
+
+       // Navigation.PushAsync(new Vistas.vEditar(persona.Name, persona.Id));
+        Navigation.PushAsync(new Vistas.ejemplo());
+
 
     }
 
-    private void btnUpdate_Clicked(object sender, EventArgs e)
+    private void btnActializar2_Clicked(object sender, EventArgs e)
     {
-        // var button = sender as Button;
-        //var persona = button.BindingContext as Persona;
-
-        Navigation.PushAsync(new Vistas.vEditar());
-
-
+       // var button = sender as Button;
+       // var persona = button.BindingContext as Persona;
+       // Navigation.PushAsync(new Vistas.ejemplo());
     }
 }
