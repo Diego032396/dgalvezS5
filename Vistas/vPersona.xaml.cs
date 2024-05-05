@@ -8,6 +8,7 @@ public partial class vPersona : ContentPage
 	{
 		InitializeComponent();
 
+
 	}
 
     private void btnAgregar_Clicked(object sender, EventArgs e)
@@ -46,19 +47,12 @@ public partial class vPersona : ContentPage
     }
     private void btnUpdate_Clicked(object sender, EventArgs e)
     {
-       // var button = sender as Button;
-        //var persona = button.BindingContext as Persona;
+        var button = sender as Button;
+        var persona = button.BindingContext as Persona;
 
-       // Navigation.PushAsync(new Vistas.vEditar(persona.Name, persona.Id));
-        Navigation.PushAsync(new Vistas.ejemplo());
+        Navigation.PushAsync(new Vistas.vEditar(persona.Name, persona.Id));
+        
 
 
-    }
-
-    private void btnActializar2_Clicked(object sender, EventArgs e)
-    {
-       // var button = sender as Button;
-       // var persona = button.BindingContext as Persona;
-       // Navigation.PushAsync(new Vistas.ejemplo());
     }
 }

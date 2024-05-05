@@ -94,7 +94,6 @@
                                     BackgroundColor="Blue"
                                     Clicked="btnUpdate_Clicked"/>
                         </Grid>
-
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

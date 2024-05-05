@@ -20,6 +20,7 @@ public partial class vEditar : ContentPage
 		{
 	Persona persona = new Persona{Id = id, Name = nuevonombre};
 		App.PersonRepo.UpdatePerson(persona);
+			Navigation.PushAsync(new Vistas.vPersona());
 		}
 		else
 		{
